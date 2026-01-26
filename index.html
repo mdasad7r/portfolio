@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mohammed Asad | Research + Industry</title>
+    <meta name="description" content="Mohammed Asad. Research and industry work across ML, computer vision, RL, and medical imaging." />
+    <meta name="color-scheme" content="dark light" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <div class="bg" aria-hidden="true">
+      <div class="bg__grain"></div>
+      <div class="bg__glow"></div>
+    </div>
+
+    <header class="header" role="banner">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand__dot" aria-hidden="true"></span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <a href="#experience">Experience</a>
+        <a href="#papers">Papers</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#courses">Courses</a>
+        <a href="#extracurricular">Extracurricular</a>
+        <a href="#contact" class="nav__cta">Collaborate</a>
+      </nav>
+
+      <div class="header__right">
+        <label class="themeSwitch">
+          <input id="themeToggle" class="themeSwitch__input" type="checkbox" role="switch" aria-label="Toggle dark/light mode" />
+          <span class="themeSwitch__track" aria-hidden="true">
+            <span class="themeSwitch__thumb" aria-hidden="true"></span>
+          </span>
+        </label>
+      </div>
+
+      <div class="progress" aria-hidden="true">
+        <div class="progress__bar" id="progressBar"></div>
+      </div>
+    </header>
+
+    <main id="top" class="main" role="main">
+      <!-- HERO: left profile only here -->
+      <section class="hero" id="hero">
+        <div class="heroGrid">
+                    <div class="heroLeft">
+            <aside class="profileCard reveal">
+              <img class="profileImg" id="profileImg" src="assets/profile.png" alt="Portrait of Mohammed Asad" />
+              <div class="profileName" id="profileName"></div>
+
+              <div class="profileEmails" id="profileEmails"></div>
+
+              <div class="profileLinks" id="profileLinks"></div>
+            </aside>
+
+            <article class="card reveal" id="researchInterests">
+              <div class="cardHead">
+                <div class="cardTitle">Research interests</div>
+              </div>
+              <div class="tagRow" style="margin-top:0;">
+                <span class="tag">Computer Vision</span>
+                <span class="tag">Neuromorphic ML</span>
+                <span class="tag">Reinforcement Learning</span>
+                <span class="tag">Diffusion Models</span>
+                <span class="tag">Natural Language Processing</span>
+                <span class="tag">BioMedical Imaging</span>
+                <span class="tag">Robotics</span>
+                <span class="tag">Algorithms</span>
+                <span class="tag">AI for Embedded Systems and Hardware</span>
+              </div>
+            </article>
+          </div>
+
+
+          <div class="heroRight">
+            <article class="card reveal">
+              <div class="cardHead">
+                <div class="cardTitle"><strong>About me</strong></div>
+              </div>
+              <div class="aboutText" id="aboutText"></div>
+            </article>
+
+            <article class="card reveal" id="education">
+              <div class="cardHead">
+                <div class="cardTitle">Education</div>
+                <div class="cardHint"></div>
+              </div>
+              <div class="eduStack" id="educationList"></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section class="section sectionBox" id="experience">
+        <div class="sectionHead reveal">
+        <h2 class="sectionTitle">Experience</h2>
+      </div>
+        <div class="xpStack" id="experienceList"></div>
+      </section>
+
+      <!-- PAPERS -->
+      <section class="section sectionBox" id="papers">
+        <div class="sectionHead reveal">
+        <h2 class="sectionTitle">Research Papers</h2>
+      </div>
+
+        <div class="workStack" id="papersList"></div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section class="section sectionBox" id="projects">
+        <div class="sectionHead reveal">
+        <h2 class="sectionTitle">Academic and other Projects</h2>
+      </div>
+
+        <div class="workStack" id="projectsList"></div>
+      </section>
+
+      <!-- SKILLS -->
+      <section class="section sectionBox" id="skills">
+        <div class="sectionHead reveal">
+        <h2 class="sectionTitle">Skills</h2>
+      </div>
+        <div class="skillsWrap" id="skillsWrap"></div>
+      </section>
+
+      <!-- COURSES -->
+      <section class="section sectionBox" id="courses">
+        <div class="sectionHead reveal">
+        <h2 class="sectionTitle">Courses Done</h2>
+      </div>
+        <div class="coursesGrid" id="coursesWrap"></div>
+      </section>
+
+      <!-- EXTRACURRICULAR -->
+      <section class="section sectionBox" id="extracurricular">
+        <div class="sectionHead reveal">
+        <h2 class="sectionTitle">Extracurricular and Achievements</h2>
+      </div>
+        <div class="extraStack" id="extraWrap"></div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="section" id="contact">
+        <div class="cta reveal">
+          <h2>Research collaboration</h2>
+          <p class="muted" id="collabLine"></p>
+          <p class="tiny muted" id="collabAvailability"></p>
+
+          <div class="ctaActions" id="collabActions"></div>
+          <p class="tiny muted" id="toast" role="status" aria-live="polite"></p>
+        </div>
+
+
+        <footer class="footer">
+          <span class="muted">© <span id="year"></span> Mohammed Asad</span>
+          <a class="muted footerLink" href="#top">Back to top</a>
+        </footer>
+      </section>
+    </main>
+
+    <button class="toTopBtn" id="toTopBtn" type="button" aria-label="Back to top">↑</button>
+
+    <script src="main.js"></script>
+
+  </body>
+</html>
