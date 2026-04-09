@@ -69,7 +69,7 @@ const DATA = {
       role: "Research Intern, Dr. Rahul Katariya (CSE, DTU) and Sudhir Singh (IT, IGDTUW)",
       orgLine: "Delhi Technological University & IGDTUW, New Delhi, India",
       when: "JUN'25 to OCT'25",
-      logos: ["assets/org/dtu.png", "assets/org/igdtuw.png"],
+      logos: ["assets/org/dtu.png"],
       tags: ["Computer Vision", "Deep Learning"],
       paragraph:
         "During my summer research project at Calibre Group under the supervision of Dr. Sudhir Singh, I developed a novel hybrid deep learning model for breast cancer detection that explicitly combines local lesion-level cues with broader global tissue context to improve diagnostic robustness. I led the project end to end, from proposing the core idea and designing the full training and evaluation pipeline to implementing the model and validating it on the CBIS-DDSM dataset, where it achieved superior performance. To ensure the results were rigorous and interpretable, I conducted comprehensive ablation studies to isolate the contribution of each component and performed detailed error analysis to characterize failure modes and guide refinements. This work is being prepared for submission to IEEE Transactions on Medical Imaging (TMI).",
@@ -78,7 +78,7 @@ const DATA = {
       role: "Research Collaboration Project with PhD scholars from Purdue and Penn State University",
       orgLine: "DTU, India & Purdue, Penn State, USA",
       when: "JAN'25 to MAR'25",
-      logos: ["assets/org/dtu.png", "assets/org/purdue.png", "assets/org/pennstate.png"],
+      logos: ["assets/org/purdue.png"],
       tags: ["Reinforcement Learning", "Diffusion Models", "Deep Learning"],
       paragraph:
         "I collaborated with PhD scholars from Purdue and Penn State University on research exploring diffusion models integrated with reinforcement learning. I investigated RL-guided diffusion for neural weight generation, designing task-specific reward functions to improve model accuracy, training stability, and transfer across downstream tasks. I also implemented and analyzed the baseline RL–diffusion approach, benchmarking its adaptability, scalability, and sampling efficiency across multiple task settings to understand where RL guidance provides the most practical gains.",
