@@ -346,154 +346,321 @@ Cancer Classification in Mammography},
     </div>
 
 
-    <!-- ==========================================================
-         EXPERIENCE SECTION
-         ✏️ EDIT: Replace placeholder experience items with yours.
-    ========================================================== -->
-    <section id="experience" class="section-experience" aria-labelledby="exp-heading">
-      <div class="container">
+  <!-- ==========================================================
+     EXPERIENCE SECTION
+========================================================== -->
+<section id="experience" class="section-experience" aria-labelledby="exp-heading">
+  <div class="container">
 
-        <header class="section-header">
-          <h2 id="exp-heading" class="section-title">Experience</h2>
-          <p class="section-subtitle">Research, industry, and academic positions.</p>
-        </header>
+    <header class="section-header">
+      <h2 id="exp-heading" class="section-title">Experience</h2>
+      <p class="section-subtitle">Research, industry, and academic positions.</p>
+    </header>
 
-        <div class="timeline">
+    <div class="timeline">
 
-          <!-- ✏️ EDIT: Experience item 1 -->
-          <article class="timeline-item" aria-label="Experience: Visiting Researcher at Example AI University">
-            <div class="timeline-icon">
-              <img src="images/logo-dtu.png" alt="Delhi Technological University logo" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" />
-            </div>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <div>
-                  <!-- ✏️ EDIT: Role title -->
-                  <h3 class="timeline-role">Bachelor's Thesis Researcher</h3>
-                  <!-- ✏️ EDIT: Organization -->
-                  <p class="timeline-org">Delhi Technological University</p>
-                </div>
-                <div class="timeline-meta">
-                  <!-- ✏️ EDIT: Date range -->
-                  <span class="timeline-date">Sep 2025 – May 2026</span>
-                  <!-- ✏️ EDIT: Location -->
-                  <span class="timeline-location">New Delhi, India</span>
-                </div>
-              </div>
-              <!-- ✏️ EDIT: Description -->
-              <p class="timeline-desc">Built an orchard-scale apple detection study focused on visual reliability under occlusion, lighting variation, dense fruit clusters, and leaf-cluttered backgrounds. Associated paper accepted at ICICV 2026.</p>
-              <!-- ✏️ EDIT: Bullet points -->
-              <ul class="timeline-bullets">
-                <li>Formulated single-class apple detection on AppleBBCH81 for real-world orchard imagery.</li>
-                <li>Benchmarked one-stage, two-stage, and transformer-based detectors using COCO-style mAP, precision, recall, F1-score, and precision-recall analysis.</li>
-                <li>Studied edge deployment feasibility for Raspberry Pi-class devices, focusing on models that remain useful outside clean benchmark settings.</li>
-              </ul>
-            </div>
-          </article>
+      <!-- ======================================================
+           UCF / CRCV
+      ======================================================= -->
+      <article class="timeline-item" aria-label="Researcher at Center for Research in Computer Vision, UCF">
+        <div class="timeline-icon">
+          <img src="images/ucf_logo.png" alt="University of Central Florida logo"
+               style="width:85%;height:85%;object-fit:contain;" />
+        </div>
 
-          <!-- ✏️ EDIT: Experience item 2 -->
-          <article class="timeline-item" aria-label="Experience: Research Intern at Example University Lab">
-            <div class="timeline-icon">
-              <img src="images/logo-dtu.png" alt="MMDA Lab DTU logo" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" />
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-role">Researcher</h3>
+              <p class="timeline-org">Center for Research in Computer Vision (CRCV), UCF</p>
             </div>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="timeline-role">Research Intern</h3>
-                  <p class="timeline-org">MMDA Lab, Delhi Technological University</p>
-                </div>
-                <div class="timeline-meta">
-                  <span class="timeline-date">Jun 2024 – Nov 2025</span>
-                  <span class="timeline-location">New Delhi, India</span>
-                </div>
-              </div>
-              <p class="timeline-desc">Developed a silhouette-based gait recognition framework for identity matching when face cues are weak or unavailable. The work focuses on temporal modeling under view, clothing, carrying, noise, and long-sequence variation.</p>
-              <ul class="timeline-bullets">
-                <li>Designed a CNN + Temporal KAN architecture with learnable temporal dynamics and gated long-term memory.</li>
-                <li>Modeled local gait cycles and broader motion context for robust identity matching across surveillance conditions.</li>
-                <li>Validated the framework on CASIA-B using gallery-probe matching across normal walking, bag-carrying, and clothing-change settings.</li>
-              </ul>
+            <div class="timeline-meta">
+              <span class="timeline-date">Jun 2026 – Present</span>
+              <span class="timeline-location">Orlando, USA</span>
             </div>
-          </article>
+          </div>
 
-          <!-- ✏️ EDIT: Experience item 3 -->
-          <article class="timeline-item" aria-label="Experience: Research Intern at Computer Vision and Language Lab">
-            <div class="timeline-icon">
-              <img src="images/logo-calibre.png" alt="CALIBRE Lab DTU logo" style="width:100%;height:100%;object-fit:cover;border-radius:50%;" />
-            </div>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="timeline-role">Research Intern</h3>
-                  <p class="timeline-org">CALIBRE Lab, Delhi Technological University</p>
-                </div>
-                <div class="timeline-meta">
-                  <span class="timeline-date">Jun 2025 – Oct 2025</span>
-                  <span class="timeline-location">New Delhi, India</span>
-                </div>
-              </div>
-              <p class="timeline-desc">Worked on mammography ROI classification, focusing on benign-malignant lesion understanding under variation in texture, scale, appearance, and class balance.</p>
-              <ul class="timeline-bullets">
-                <li>Built a hybrid EfficientNetV2-M + Vision Mamba pipeline for local lesion representation and efficient global context modeling.</li>
-                <li>Evaluated the system on CBIS-DDSM lesion crops against CNN and Transformer baselines.</li>
-                <li>Connected model design with practical diagnostic constraints, where subtle visual patterns and long-range context both matter.</li>
-              </ul>
-            </div>
-          </article>
+          <p class="timeline-desc">
+            Studying unsupervised object-centric visual learning, with a focus on how neural systems discover and organize meaningful objects without human annotations.
+          </p>
 
-          <!-- ✏️ EDIT: Experience item 4 -->
-          <article class="timeline-item" aria-label="Experience">
-            <div class="timeline-icon" style="border-radius: 10px;">
-              <img src="images/logo-deepsight.png" alt="DeepSight AI Labs logo" />
-            </div>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="timeline-role">Computer Vision Engineer – Intern</h3>
-                  <p class="timeline-org">DeepSight AI Labs Pvt. Ltd.</p>
-                </div>
-                <div class="timeline-meta">
-                  <span class="timeline-date">Aug 2025 – Feb 2026</span>
-                  <span class="timeline-location">Gurugram, India</span>
-                </div>
-              </div>
-              <p class="timeline-desc">Worked on applied AI systems for enterprise data access, internal document intelligence, forecasting, and workflow automation.</p>
-              <ul class="timeline-bullets">
-                <li>Developed an agentic AI system for querying structured, unstructured, and operational data through natural language.</li>
-                <li>Built prediction, NLP, and automation components for internal decision-support workflows.</li>
-                <li>Contributed to production-oriented tools where reliable retrieval and usable outputs mattered more than demo performance.</li>
-              </ul>
-            </div>
-          </article>
+          <ul class="timeline-bullets">
+            <li>Investigating unsupervised object-centric visual learning to enable neural networks to discover meaningful objects from complex visual scenes.</li>
+            <li>Exploring Artificial Kuramoto Oscillatory Neurons (AKOrN), using synchronization dynamics and self-attention to learn structured object representations from visual features.</li>
+            <li>Obtained promising preliminary results and am addressing key remaining challenges in dynamics.</li>
+          </ul>
+        </div>
+      </article>
 
-          <!-- ✏️ EDIT: Experience item 5 -->
-          <article class="timeline-item" aria-label="Experience">
-            <div class="timeline-icon">
-              <img src="images/logo-purdue.png" alt="Purdue University logo" style="width:85%;height:85%;object-fit:contain;" />
-            </div> 
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="timeline-role">Research Collaborator</h3>
-                  <p class="timeline-org">Collaboration with Purdue &amp; Penn State University</p>
-                </div>
-                <div class="timeline-meta">
-                  <span class="timeline-date">Jan 2025 – Mar 2025</span>
-                  <span class="timeline-location">Remote</span>
-                </div>
-              </div>
-              <p class="timeline-desc">Explored reward-guided adaptation of Stable Diffusion v1.5 for task-specific image generation, using reinforcement learning to steer visual quality beyond the base diffusion objective.</p>
-              <ul class="timeline-bullets">
-                <li>Designed a parameter-efficient RL fine-tuning setup using LoRA layers in U-Net attention blocks.</li>
-                <li>Used reward scoring and PPO-style policy updates to guide latent diffusion outputs.</li>
-                <li>Analyzed the difference between moderate reward optimization and over-optimization in generated images.</li>
-              </ul>
-            </div>
-          </article>
 
-        </div><!-- end timeline -->
-      </div><!-- end container -->
-    </section><!-- end #experience -->
+      <!-- ======================================================
+           SFU / MIAL
+      ======================================================= -->
+      <article class="timeline-item" aria-label="Research Intern at MIAL Lab, Simon Fraser University">
+        <div class="timeline-icon">
+          <img src="images/sfu_logo.png" alt="Simon Fraser University logo"
+               style="width:88%;height:88%;object-fit:contain;" />
+        </div>
+
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-role">Research Intern</h3>
+              <p class="timeline-org">MIAL Lab, Simon Fraser University</p>
+            </div>
+            <div class="timeline-meta">
+              <span class="timeline-date">Jun 2026 – Present</span>
+              <span class="timeline-location">Vancouver, Canada</span>
+            </div>
+          </div>
+
+          <p class="timeline-desc">
+            Investigating computational representations of spatial organization in single-molecule localization microscopy (SMLM) data, motivated by the challenge of extracting meaningful biological structure from molecular coordinates.
+          </p>
+
+          <ul class="timeline-bullets">
+            <li>Developed and evaluated a graph-based framework to represent spatial data, extract quantitative features, and assess how different representations capture and distinguish molecular organization.</li>
+            <li>Established quantitative evaluation protocols for studying spatial representations and their robustness across diverse spatial patterns and point distributions.</li>
+          </ul>
+        </div>
+      </article>
+
+
+      <!-- ======================================================
+           FACE ANTI-SPOOFING
+      ======================================================= -->
+      <article class="timeline-item" aria-label="Researcher in Face Anti-Spoofing">
+        <div class="timeline-icon">
+          <img src="images/logo-dtu.png" alt="Delhi Technological University logo"
+               style="width:100%;height:100%;object-fit:cover;border-radius:50%;" />
+        </div>
+
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-role">Researcher – Face Anti-Spoofing</h3>
+              <p class="timeline-org">Delhi Technological University</p>
+            </div>
+            <div class="timeline-meta">
+              <span class="timeline-date">Jun 2026 – Present</span>
+              <span class="timeline-location">New Delhi, India</span>
+            </div>
+          </div>
+
+          <p class="timeline-desc">
+            Studying robust face anti-spoofing under domain shifts, with emphasis on training-free generalization across unseen datasets.
+          </p>
+
+          <ul class="timeline-bullets">
+            <li>Developed a training-free framework that uses structured visual representations to model spoofing patterns without domain-specific retraining.</li>
+            <li>Achieved state-of-the-art performance on intra- and cross-dataset benchmarks; manuscript in preparation for CVPR 2027.</li>
+          </ul>
+        </div>
+      </article>
+
+
+      <!-- ======================================================
+           BACHELOR'S THESIS
+      ======================================================= -->
+      <article class="timeline-item" aria-label="Bachelor's Thesis Researcher at Delhi Technological University">
+        <div class="timeline-icon">
+          <img src="images/logo-dtu.png" alt="Delhi Technological University logo"
+               style="width:100%;height:100%;object-fit:cover;border-radius:50%;" />
+        </div>
+
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-role">Bachelor's Thesis Researcher</h3>
+              <p class="timeline-org">Delhi Technological University</p>
+            </div>
+            <div class="timeline-meta">
+              <span class="timeline-date">Sep 2025 – May 2026</span>
+              <span class="timeline-location">New Delhi, India</span>
+            </div>
+          </div>
+
+          <p class="timeline-desc">
+            Investigated robust apple detection for orchard monitoring, where occlusion, varying illumination, foliage, and dense fruit clusters challenge reliable detection.
+          </p>
+
+          <ul class="timeline-bullets">
+            <li>Evaluated modern object detectors for accuracy–efficiency trade-offs and identified models suitable for Raspberry Pi deployment in real-world orchards.</li>
+            <li>Received an A+ for the thesis work; associated paper published at ICICV 2026.</li>
+          </ul>
+        </div>
+      </article>
+
+
+      <!-- ======================================================
+           DEEPSIGHT AI LABS
+      ======================================================= -->
+      <article class="timeline-item" aria-label="Computer Vision Engineer Intern at DeepSight AI Labs">
+        <div class="timeline-icon" style="border-radius:10px;">
+          <img src="images/logo-deepsight.png" alt="DeepSight AI Labs logo"
+               style="width:100%;height:100%;object-fit:contain;" />
+        </div>
+
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-role">Computer Vision Engineer – Intern</h3>
+              <p class="timeline-org">DeepSight AI Labs Pvt. Ltd.</p>
+            </div>
+            <div class="timeline-meta">
+              <span class="timeline-date">Aug 2025 – Feb 2026</span>
+              <span class="timeline-location">Gurugram, India</span>
+            </div>
+          </div>
+
+          <p class="timeline-desc">
+            Worked on applied AI systems for enterprise data access, document intelligence, forecasting, and workflow automation.
+          </p>
+
+          <ul class="timeline-bullets">
+            <li>Developed an agentic AI system for querying structured, unstructured, and operational data through natural language.</li>
+            <li>Designed prediction models, NLP algorithms, and automation pipelines for internal workflows and decision support.</li>
+            <li>Received a Letter of Recommendation recognizing contributions and performance during the internship.</li>
+          </ul>
+        </div>
+      </article>
+
+
+      <!-- ======================================================
+           GAIT RECOGNITION
+      ======================================================= -->
+      <article class="timeline-item" aria-label="Research Intern at MMDA Lab, Delhi Technological University">
+        <div class="timeline-icon">
+          <img src="images/logo-dtu.png" alt="Delhi Technological University logo"
+               style="width:100%;height:100%;object-fit:cover;border-radius:50%;" />
+        </div>
+
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-role">Research Intern</h3>
+              <p class="timeline-org">MMDA Lab, Delhi Technological University</p>
+            </div>
+            <div class="timeline-meta">
+              <span class="timeline-date">Jun 2024 – Nov 2025</span>
+              <span class="timeline-location">New Delhi, India</span>
+            </div>
+          </div>
+
+          <p class="timeline-desc">
+            Developed a gait recognition framework for identity matching when facial cues are weak or unavailable.
+          </p>
+
+          <ul class="timeline-bullets">
+            <li>Developed a novel CNN + Temporal Kolmogorov-Arnold Network (TKAN) framework with learnable KAN-based temporal dynamics and gated long-term memory.</li>
+            <li>Achieved SOTA on CASIA-B with cosine gallery-probe matching across view, clothing, carrying, noise, and long-sequence variations (98.82% CL, 99.52% NM, 99.56% BG Rank-1), plus SOTA on GREW carrying/dressing subsets.</li>
+            <li>Associated research preprint available on <a href="https://arxiv.org/abs/2604.09990" target="_blank" rel="noopener noreferrer">arXiv:2604.09990</a>.</li>
+          </ul>
+        </div>
+      </article>
+
+
+      <!-- ======================================================
+           BREAST CANCER
+      ======================================================= -->
+      <article class="timeline-item" aria-label="Research Intern at CALIBRE-DTU">
+        <div class="timeline-icon">
+          <img src="images/logo-calibre.png" alt="CALIBRE-DTU logo"
+               style="width:100%;height:100%;object-fit:cover;border-radius:50%;" />
+        </div>
+
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-role">Research Intern</h3>
+              <p class="timeline-org">CALIBRE-DTU</p>
+            </div>
+            <div class="timeline-meta">
+              <span class="timeline-date">Jun 2025 – Oct 2025</span>
+              <span class="timeline-location">New Delhi, India</span>
+            </div>
+          </div>
+
+          <p class="timeline-desc">
+            Investigated benign–malignant ROI classification in mammography under variation in lesion appearance, scale, texture, and class imbalance.
+          </p>
+
+          <ul class="timeline-bullets">
+            <li>Developed a novel hybrid EfficientNetV2-M–Vision Mamba framework for benign–malignant ROI classification in mammography, combining CNN-based local representation with linear-complexity global context modeling to address lesion variations; achieved 94.2% accuracy and an AUC of 0.875 on CBIS-DDSM.</li>
+            <li>Associated preprint released as <a href="https://arxiv.org/abs/2604.12437" target="_blank" rel="noopener noreferrer">arXiv:2604.12437</a>.</li>
+          </ul>
+        </div>
+      </article>
+
+
+      <!-- ======================================================
+           PRODIGAL AI
+      ======================================================= -->
+      <article class="timeline-item" aria-label="Artificial Intelligence Intern at Prodigal AI">
+        <div class="timeline-icon">
+          <span style="font-size:1.15rem;font-weight:800;color:var(--accent);">PA</span>
+        </div>
+
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-role">Artificial Intelligence Intern</h3>
+              <p class="timeline-org">Prodigal AI – Enterprise AI Automation</p>
+            </div>
+            <div class="timeline-meta">
+              <span class="timeline-date">Jun 2025 – Jul 2025</span>
+              <span class="timeline-location">New Delhi, India</span>
+            </div>
+          </div>
+
+          <p class="timeline-desc">
+            Worked on enterprise AI automation using retrieval-augmented generation and document-based question answering.
+          </p>
+
+          <ul class="timeline-bullets">
+            <li>Developed a RAG-based chatbot for retrieval and question answering over internal company documents, enabling context-aware enterprise knowledge access.</li>
+            <li>Earned an Internship Certificate for the work.</li>
+          </ul>
+        </div>
+      </article>
+
+
+      <!-- ======================================================
+           PURDUE / PENN STATE
+      ======================================================= -->
+      <article class="timeline-item" aria-label="Research Collaborator with Purdue and Penn State University">
+        <div class="timeline-icon">
+          <img src="images/logo-purdue.png" alt="Purdue University logo"
+               style="width:85%;height:85%;object-fit:contain;" />
+        </div>
+
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div>
+              <h3 class="timeline-role">Research Collaborator</h3>
+              <p class="timeline-org">Collaboration with Purdue &amp; Penn State University</p>
+            </div>
+            <div class="timeline-meta">
+              <span class="timeline-date">Jan 2025 – Mar 2025</span>
+              <span class="timeline-location">Remote</span>
+            </div>
+          </div>
+
+          <p class="timeline-desc">
+            Explored reward-guided adaptation of Stable Diffusion for task-specific image generation using reinforcement learning.
+          </p>
+
+          <ul class="timeline-bullets">
+            <li>Designed a parameter-efficient RL fine-tuning setup using LoRA layers in U-Net attention blocks.</li>
+            <li>Used reward scoring and PPO-style policy updates to guide latent diffusion outputs.</li>
+            <li>Analyzed the effects of moderate versus excessive reward optimization on generated images.</li>
+          </ul>
+        </div>
+      </article>
+
+    </div><!-- end timeline -->
+  </div><!-- end container -->
+</section><!-- end #experience -->
 
 
     <!-- ==========================================================
