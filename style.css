@@ -1273,3 +1273,29 @@ a.contact-info-value:hover { color: var(--accent); }
 
   #hero-canvas { display: none; }
 }
+
+
+/* Highlighted PhD announcement */
+.bio-column .bio-text.phd-notice {
+  color: var(--accent-text);
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.6;
+  animation: phdPulse 1.8s ease-in-out infinite;
+}
+
+@keyframes phdPulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bio-column .bio-text.phd-notice {
+    animation: none;
+  }
+}
+
