@@ -472,6 +472,25 @@ section:not(.section-hero) {
   line-height: 1.8;
 }
 
+
+/* Blinking PhD announcement */
+.phd-notice {
+  color: var(--accent);
+  font-size: 1.05rem;
+  font-weight: 700;
+  animation: phd-blink 1.8s ease-in-out infinite;
+}
+
+@keyframes phd-blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.35;
+  }
+}
+
+
 /* Interests + Education mini-grid */
 .bio-grid {
   display: grid;
