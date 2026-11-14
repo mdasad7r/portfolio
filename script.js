@@ -13,6 +13,73 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+     /* ============================================================
+     TYPEWRITER ANIMATION
+     ============================================================ */
+
+  const typingText = document.getElementById('typing-text');
+
+  if (typingText) {
+    const fullText = typingText.textContent;
+    const motionPreference = window.matchMedia(
+      '(prefers-reduced-motion: reduce)'
+    );
+
+    const typingSpeed = 65;
+    const deletingSpeed = 35;
+    const pauseAfterTyping = 2000;
+    const pauseAfterDeleting = 500;
+
+    let index = 0;
+    let deleting = false;
+    let timer;
+
+    function typeWriter() {
+      if (motionPreference.matches) return;
+
+      if (!deleting) {
+        index++;
+        typingText.textContent = fullText.slice(0, index);
+
+        if (index === fullText.length) {
+          deleting = true;
+          timer = setTimeout(typeWriter, pauseAfterTyping);
+          return;
+        }
+      } else {
+        index--;
+        typingText.textContent = fullText.slice(0, index);
+
+        if (index === 0) {
+          deleting = false;
+          timer = setTimeout(typeWriter, pauseAfterDeleting);
+          return;
+        }
+      }
+
+      timer = setTimeout(
+        typeWriter,
+        deleting ? deletingSpeed : typingSpeed
+      );
+    }
+
+    function restartTypewriter() {
+      clearTimeout(timer);
+      index = 0;
+      deleting = false;
+
+      if (motionPreference.matches) {
+        typingText.textContent = fullText;
+      } else {
+        typingText.textContent = '';
+        timer = setTimeout(typeWriter, 450);
+      }
+    }
+
+    motionPreference.addEventListener('change', restartTypewriter);
+    restartTypewriter();
+  }
+
   /* ============================================================
      1. DARK MODE TOGGLE
      Reads/writes 'theme' key in localStorage.
