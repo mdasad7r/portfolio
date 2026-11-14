@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const typingSpeed = 110;
     const deletingSpeed = 130;
-    const pauseAfterTyping = 3000;
+    const pauseAfterTyping = 7000;
     const pauseAfterDeleting = 300;
 
     let index = 0;
