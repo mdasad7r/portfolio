@@ -457,6 +457,7 @@ section:not(.section-hero) {
 }
 
 .bio-tagline {
+  position: relative;
   font-size: clamp(1.1rem, 2vw, 1.3rem);
   font-weight: 700;
   color: var(--text);
@@ -464,6 +465,43 @@ section:not(.section-hero) {
   letter-spacing: -0.01em;
   border-left: 3px solid var(--accent);
   padding-left: 16px;
+}
+
+/* Reserve space to prevent layout shifting */
+.typewriter-space {
+  visibility: hidden;
+}
+
+/* Animated text */
+.typewriter-layer {
+  position: absolute;
+  top: 0;
+  left: 16px;
+  right: 0;
+}
+
+/* Blinking typing cursor */
+.typing-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background: currentColor;
+  vertical-align: -0.15em;
+  margin-left: 2px;
+  animation: cursorBlink 0.8s steps(1) infinite;
+}
+
+@keyframes cursorBlink {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .typing-cursor {
+    display: none;
+  }
 }
 
 .bio-text {
