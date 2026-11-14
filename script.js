@@ -25,10 +25,10 @@ document.addEventListener('DOMContentLoaded', () => {
       '(prefers-reduced-motion: reduce)'
     );
 
-    const typingSpeed = 65;
-    const deletingSpeed = 35;
-    const pauseAfterTyping = 2000;
-    const pauseAfterDeleting = 500;
+    const typingSpeed = 80;
+    const deletingSpeed = 90;
+    const pauseAfterTyping = 3000;
+    const pauseAfterDeleting = 300;
 
     let index = 0;
     let deleting = false;
