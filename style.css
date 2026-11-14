@@ -1337,3 +1337,19 @@ a.contact-info-value:hover { color: var(--accent); }
   }
 }
 
+
+/* Fix duplicate typewriter text */
+.bio-tagline {
+  position: relative;
+}
+
+.bio-tagline .typewriter-space {
+  visibility: hidden;
+}
+
+.bio-tagline .typewriter-layer {
+  position: absolute;
+  top: 0;
+  left: 16px;
+  right: 0;
+}
