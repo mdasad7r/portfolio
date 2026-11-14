@@ -31,7 +31,7 @@
   /* ── Backgrounds ─────────────────────────────────────── */
   --bg:              #f8fafc;
   --bg-alt:          #f1f5f9;
-  --card:            #ffffff;
+  --card:            #F3DEDC;
   --card-border:     #e2e8f0;
 
   /* ── Text ────────────────────────────────────────────── */
@@ -74,7 +74,7 @@
 
   --bg:              #0f172a;
   --bg-alt:          #1e293b;
-  --card:            #111827;
+  --card:            #403130;
   --card-border:     #1f2d3d;
 
   --text:            #e5e7eb;
